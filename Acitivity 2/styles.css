@@ -1,0 +1,102 @@
+/* Body Styles */
+body {
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section and Form Styles */
+.section,
+.form-group {
+    flex-basis: 30%;
+    padding: 20px;
+    border-radius: 8px;   
+}
+
+/* Form Label Styles */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Form Input and Textarea Styles */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styling Gender Box */
+.form-group {
+    border: 1px solid #9d9d9d;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Styling Gender Labels and Radio Buttons */
+.box-label {
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+.box-label input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Additional Styling for Attractiveness */
+/* Styling Contact Form, Login Form, and Survey Form */
+.contact-form, .login-form, .survey-form {
+    background: linear-gradient(to bottom right, #e9e7e7, #c764c4);
+}
+
+/* Responsive Form Width for Smaller Devices */
+@media screen and (max-width: 768px) {
+    .section {
+        flex-basis: 100%;
+        margin-top: 0;
+    }
+}

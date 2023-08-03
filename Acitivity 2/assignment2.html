@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Contact Form -->
+        <section class="section contact-form">
+            <h1>Contact Us</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="contact_name">Name:</label>
+                    <input type="text" id="contact_name" name="name" placeholder="Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." rows="4" cols="50" required></textarea>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- Log In -->
+        <section class="section login-form">
+            <h1>Login</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+
+                <input type="submit" value="Login">
+            </form>
+        </section>
+
+        <!-- Survey -->
+        <section class="section survey-form">
+            <h1>Survey</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="survey_name">Name:</label>
+                    <input type="text" id="survey_name" name="name" placeholder="Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Age" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label><br>
+                    <label class="box-label" for="male">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        Male
+                    </label>
+                    <label class="box-label" for="female">
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        Female
+                    </label>
+                    <label class="box-label" for="other">
+                        <input type="radio" id="other" name="gender" value="other" required>
+                        Other
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Programming Languages:</label><br>
+                    <label for="PHP">PHP</label>
+                    <input type="checkbox" id="PHP" name="programming_language" value="PHP">
+                    <label for="Javascript">Javascript</label>
+                    <input type="checkbox" id="python" name="programming_language" value="Javascript">
+                    <label for="C++">C++</label>
+                    <input type="checkbox" id="C++" name="programming_language" value="C++">
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" placeholder="Comments..." rows="4" cols="50"></textarea>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
